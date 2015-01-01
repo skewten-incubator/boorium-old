@@ -1,6 +1,6 @@
 boorium
 =======
 
-**stage** | concept
+**stage**  concept
 
 like picasa, but for boorus
