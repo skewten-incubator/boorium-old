@@ -1,4 +1,6 @@
 boorium
 =======
 
-beautiful booru client
+**stage** | concept
+
+like picasa, but for boorus
