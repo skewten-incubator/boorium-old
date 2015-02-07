@@ -1,0 +1,53 @@
+{
+    "main": "index.html",
+
+    "name": "boorium",
+    "description": "the beautiful booru browser",
+    "version": "0.0.1-dev",
+    "keywords": ["booru", "browser", "boorium", "gallery"],
+    "bugs": "https://github.com/Strat-/boorium/issues",
+    
+    "contributors": [
+        {
+            "name": "Ivan Kay",
+            "email": "ivan@ivan.moe",
+            "web": "http://ivan.moe/"
+        }
+    ],
+    "licenses": [
+        {
+           "type": "MIT",
+           "url": "https://raw.githubusercontent.com/Strat-/boorium/master/LICENSE"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "http://github.com/Strat-/boorium.git"
+        }
+    ],
+
+    "nodejs": true,
+    "single-instance": true,
+    
+    "window": {
+        "title": "Boorium!",
+        "icon": "icon-48.png",
+        
+        "toolbar": false,
+        "frame": false,
+        "resizable": true,
+        "show_in_taskbar": true,
+        "position": "center",
+
+        "width": 600,
+        "height": 200,
+        "min_width": 400,
+        "min_height": 400
+    },
+    "webkit": {
+        "plugin": false,
+        "java": false,
+        "page-cache": false
+    }
+}
