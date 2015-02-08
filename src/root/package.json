@@ -1,5 +1,6 @@
 {
     "main": "html/index.html",
+    "node-main": "js/preload.js",
 
     "name": "boorium",
     "description": "the beautiful booru browser",

@@ -18,6 +18,9 @@ to get yourself set up, you need 4 console windows, each running the commands:
 you *must* first `cd` into the project root and `npm install -g {sass, jade, watch}`
 
 `watch 'cp -r src/root/* dist/' src/root`
+
 `watch 'cp -r src/js/ dist/' src/js`
+
 `jade --watch src/jade/ --out dist/html/`
+
 `scss --watch src/scss/:dist/css/`
