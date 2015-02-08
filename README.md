@@ -13,9 +13,7 @@ developing
 
 to get yourself set up, you need 4 console windows, each running the commands:
 
-*note*
-
-you *must* first `cd` into the project root and `npm install -g {sass, jade, watch}`
+**you *must* first `cd` into the project root and `npm install -g {sass, jade, watch}`**
 
 `watch 'cp -r src/root/* dist/' src/root`
 
