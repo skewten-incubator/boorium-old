@@ -1,5 +1,5 @@
 {
-    "main": "index.html",
+    "main": "html/index.html",
 
     "name": "boorium",
     "description": "the beautiful booru browser",
@@ -32,7 +32,7 @@
     
     "window": {
         "title": "Boorium!",
-        "icon": "icon-48.png",
+        "icon": "img/icon-48.png",
         
         "toolbar": false,
         "frame": false,

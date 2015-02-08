@@ -1,0 +1,9 @@
+@mixin img($path){
+    background-image: url("../img/"+$path);
+}
+
+body{
+    background-color: #484538;
+}
+
+@import "_splash.scss";
