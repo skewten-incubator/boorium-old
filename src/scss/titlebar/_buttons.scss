@@ -1,0 +1,93 @@
+.buttons{
+    $buttonWidth: 25px;
+
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 140px;
+    height: 20px;
+
+    @mixin icon($name){
+        @include img("titlebar-buttons/"+$name+".png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #545142;
+
+        &:hover{
+            background-color: #5e5b4b;
+        }
+
+        &:active{
+            background-color: #403e32;
+        }
+    }
+
+    .fs{
+        float: left;
+        width: $buttonWidth;
+        @include icon("fullscreen");
+        height: 100%;
+    }
+
+    .group{
+        width: 95px;
+        height: 100%;
+        float: right;
+
+        .minimize{
+            @include icon("minimize");
+            height: 100%;
+            width: $buttonWidth;
+            float: left;
+        }
+
+        .mr{
+            height: 100%;
+            width: $buttonWidth;
+            float: left;
+            position: relative;
+
+            div{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .maximize{
+                @include icon("maximize");
+            }
+
+            .restore{
+                display: none;
+                @include icon("restore");
+            }
+
+            &.max{
+                .maximize{
+                    display: none;
+                }
+                .restore{
+                    display: block;
+                }
+            }
+        }
+
+        .close{
+            width: 45px;
+            height: 100%;
+            float: left;
+            @include icon("close");
+
+            background-color: #822828;
+            &:hover{
+                background-color: #8c2b2b;
+            }
+            &:active{
+                background-color: #6e2222;
+            }
+        }
+    }
+}
