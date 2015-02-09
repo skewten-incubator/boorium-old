@@ -1,4 +1,4 @@
-global.win = global.window.nwDispatcher.requireNwGui().Window.get();
+global.win = window.nwDispatcher.requireNwGui().Window.get();
 
 function text(txt){
     $("#splash .sub").text(txt);
@@ -14,6 +14,8 @@ function show_main(){
     win.hide();
     $("#splash").hide();
     $("#main").show();
+    win.width = 500;
+    win.height = 500;
     win.maximize();
     win.show();
 }

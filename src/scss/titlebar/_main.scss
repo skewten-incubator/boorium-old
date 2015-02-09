@@ -1,12 +1,11 @@
 #titlebar{
-    display: table-row;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 40px;
+    width: 100%;
+    line-height: 40px;
 
-    .container{
-        display: table-cell;
-        vertical-align: center;
-        line-height: 40px;
-    }
-
+    @import "_logo-icon.scss";
     @import "_buttons.scss";
 }

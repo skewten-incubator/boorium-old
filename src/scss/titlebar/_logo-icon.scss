@@ -1,0 +1,11 @@
+.logo-icon{
+    width: 40px;
+    height: 40px;
+    float: left;
+    @include img("titlebar-icons/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    -webkit-app-region: drag;
+}
