@@ -27,7 +27,8 @@ function show_main(){
 function load_modules(){
     var libraries = [
         "request",
-        "mkdirp"
+        "mkdirp",
+        "xml2js"
     ];
 
     libraries.forEach(function(e){
