@@ -5,8 +5,12 @@ function text(txt){
 }
 
 function load_boorium(){
+    text("loading modules");
+    load_modules();
+    text("loading libraries");
+    load_libraries();
+
     text("loading ui");
-    require("../handlers").attach();
     setTimeout(show_main, 500);
 }
 
@@ -18,6 +22,31 @@ function show_main(){
     win.height = 500;
     win.maximize();
     win.show();
+}
+
+function load_modules(){
+    var libraries = [
+        "request",
+        "mkdirp"
+    ];
+
+    libraries.forEach(function(e){
+        try{
+            require(e);
+        }
+        catch(err){
+            window.alert("Could not load node.js library: '"+e+"'!");
+            win.close(true);
+        }
+    });
+}
+
+function load_libraries(){
+    //Booru API
+    global.BAP = require("../booru-api");
+    //View manager
+    global.W = require("../views");
+    W.init(); //attach the handlers for the initial views
 }
 
 exports.load = load_boorium;

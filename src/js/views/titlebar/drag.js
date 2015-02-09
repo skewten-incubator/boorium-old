@@ -33,21 +33,18 @@ function mousemove(e){
         return;
     }
 
-    console.log("yes");
-
-
     var n = {
         y: e.screenY,
         x: e.screenX
     };
     
-    if (WINDOW_MAXIMIZED){
+    if (W.MAXIMIZED){
         //TODO: This doesn't work. (https://github.com/nwjs/nw.js/issues/3066)
 
         //temporary workaround: only allow dragging when unmaximized.
         return;
         
-        WINDOW_MAXIMIZED && require("./titlebar").toggle_mr();
+        W.mr_toggle();
     }
     win.moveBy((n.x - c.x), (n.y - c.y));
 

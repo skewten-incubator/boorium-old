@@ -50,5 +50,9 @@
         "plugin": false,
         "java": false,
         "page-cache": false
+    },
+    "dependencies": {
+        "request": "~2.53.0",
+        "mkdirp": "*"
     }
 }
