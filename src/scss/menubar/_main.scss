@@ -1,0 +1,38 @@
+#menubar{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px 0;
+    padding-left: 25px;
+
+    .item{
+        margin-right: 10px;
+        line-height: 30px;
+        height: 30px;
+        padding: 0 5px;
+        text-align: center;
+        color: $light;
+        background-color: $dark;
+        float: left;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .item.selected{
+        color: $dark;
+        background-color: $light;
+    }
+
+    .item:not(.selected):hover{
+        background-color: #595646;
+    }
+
+    .item.disabled{
+        opacity: 0.5;
+        cursor: default;
+        background-color: $dark !important;
+    }
+}

@@ -9,3 +9,11 @@
     @import "_logo-icon.scss";
     @import "_buttons.scss";
 }
+
+#titlebar-margin{
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}

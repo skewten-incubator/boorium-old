@@ -2,10 +2,14 @@
     background-image: url("../img/"+$path);
 }
 
+$light: #faf3dd;
+$dark: #484538;
+
 body{
-    background-color: #484538;
+    background-color: $dark;
     -webkit-user-select: none;
     user-select: none;
+    font-family: 'Arial' sans-serif;
 }
 
 .selectable{
@@ -28,3 +32,5 @@ td{
 
 @import "_splash.scss";
 @import "titlebar/_main.scss";
+@import "menubar/_main.scss";
+@import "views/_main.scss";
